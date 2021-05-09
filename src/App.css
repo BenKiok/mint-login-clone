@@ -1,38 +1,219 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica-Neue', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eceef1
+}
+
+nav {
+  background: inherit;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 30px 0 0;
+}
+
+a {
+  text-decoration: none;
+  color: #2794dd;
+}
+
+a:visited {
+  color: #2794dd;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.forgot-creds {
+  font-size: 0.8rem;
+  padding: 3px 8px 0 0;
+  margin-left: auto;
+  color: #8d9096;
+}
+
+.forgot-creds {
+
+}
+
+.btn {
+  background: #1f77c5;
+  color: #fff;
+  border: 1px solid #4c4c4c;
+  border-radius: 3px;
+  font-size: 0.9rem;
+}
+
+.fa-unlock-alt {
+  font-size: 1.2rem;
+  padding-right: 10px;
+}
+
+.sign-in {
+  padding: 6px 18px;
+}
+
+.products {
+  width: 378px;
+  margin: 45px auto 0 auto;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.products a:hover {
+  text-decoration: none;
+}
+
+.products h1 {
+  font-size: 2.3rem;
+}
+
+.products h2 {
+  padding-top: 10px;
+  font-weight: 400;
+}
+
+.products a {
+  color: #6d6d6e;
+}
+
+.products i {
+  padding: 0 4px 0 10px;
+}
+
+.fa-leaf {
+  color: #2ba6a4;
+}
+
+.fa-book {
+  color: #2ca01d;
+}
+
+.fa-check-circle {
+  color: #d52b1e;
+}
+
+form {
+  width: 318px;
+  height: 579px;
+  padding: 30px;
+  margin: 0 auto;
+  background: #fff;
+  box-sizing: content-box;
+  border: 1px solid #c7c7c7;
+}
+
+legend {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+legend h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+legend h4 {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #a296c2;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+legend h4:last-child {
+  margin-bottom: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+fieldset {
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label {
+  font-size: 0.95rem;
+  color: #505050;
+}
+
+label em {
+  font-style: normal;
+  color: #a296c2;
+}
+
+.caption {
+  font-size: 0.7rem;
+  margin: 5px 0 30px 0;
+}
+
+input {
+  display: block;
+  width: 100%;
+  border: 1px solid #e2dddd;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  padding: 5px 8px;
+  margin-top: 10px;
+}
+
+input:nth-child(odd) {
+  margin-bottom: 30px;
+}
+
+.create-account {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1.03rem;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.legal, .recaptcha  {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #8e9ba4;
+  line-height: 1.5;
+}
+
+.legal {
+  font-style: italic;
+}
+
+.recaptcha {
+  position: relative;
+  top: 39px;
+  right: 30px;
+  box-sizing: content-box;
+  width: 318px;
+  font-size: 0.68rem;
+  background: #eceef1;
+  padding: 18px 30px;
+}
+
+.more-legal, .copyright {
+  color: #5a5a5a;
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.more-legal {
+  margin-top: 25px;
+}
+
+.more-legal a {
+  color: #5a5a5a;
+  margin-left: 13px;
+}
+
+footer {
+  box-sizing: content-box;
+  margin: 70px 0 20px 0;
+  padding: 25px 20px;
+  width: 920px;
+  background: #fff;
+  font-size: 0.9rem;
 }
